@@ -1,0 +1,1538 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>First Site Ever</title>
+    <style>
+        div.mainHeader {
+            color: white;
+           /*background-color: rgb(48, 124, 231);*/
+            margin-bottom: 50px;
+            margin: auto;
+            max-width: auto;
+            align-items: center;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+            font-family: serif;
+            text-align: center;
+            border-style: double;
+            border-width: 10px;
+            border-radius: 500%;
+            padding: 10px;
+            padding-left: 15px;
+            align-content: center;
+            width: fit-content;
+        }
+
+        body {
+            background-color: rgb(97, 156, 238);
+        }
+
+        p.cats {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        div.animalsTextPic {
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+            width: 100px;
+            margin-right: 150px;
+            margin-left: 150px;
+            color: white;
+        }
+
+        h2.breedNameOnPic {
+            font-size: 30px;
+            font-style: italic;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            color: white;
+        }
+
+        img.cats {
+            border-radius: 100%;
+        }
+
+        img.dogs {
+            border-radius: 100%;
+        }
+
+        div.catsInfo {
+            max-width: 300px;
+            margin-left: 150px;
+            margin-top: 150px;
+            display: inline-block;
+        }
+
+        p.textUnderPic {
+            width: 350px;
+            font-size: large;
+            color: white;
+        }
+        html, body {
+  height: 100%;
+}
+
+body {
+  background: url(https://i.pinimg.com/originals/44/6e/3b/446e3b79395a287ca32f7977dd83b290.jpg);
+  background-size: cover;
+}
+
+.firefly {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 0.4vw;
+  height: 0.4vw;
+  margin: -0.2vw 0 0 9.8vw;
+  animation: ease 200s alternate infinite;
+  pointer-events: none;
+}
+.firefly::before, .firefly::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: -10vw;
+}
+.firefly::before {
+  background: black;
+  opacity: 0.4;
+  animation: drift ease alternate infinite;
+}
+.firefly::after {
+  background: white;
+  opacity: 0;
+  box-shadow: 0 0 0vw 0vw yellow;
+  animation: drift ease alternate infinite, flash ease infinite;
+}
+
+.firefly:nth-child(1) {
+  animation-name: move1;
+}
+.firefly:nth-child(1)::before {
+  animation-duration: 9s;
+}
+.firefly:nth-child(1)::after {
+  animation-duration: 9s, 5304ms;
+  animation-delay: 0ms, 7476ms;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateX(8vw) translateY(41vh) scale(0.71);
+  }
+  4.5454545455% {
+    transform: translateX(-14vw) translateY(-28vh) scale(0.64);
+  }
+  9.0909090909% {
+    transform: translateX(-2vw) translateY(7vh) scale(0.65);
+  }
+  13.6363636364% {
+    transform: translateX(-1vw) translateY(42vh) scale(0.77);
+  }
+  18.1818181818% {
+    transform: translateX(14vw) translateY(18vh) scale(0.79);
+  }
+  22.7272727273% {
+    transform: translateX(-17vw) translateY(-13vh) scale(0.59);
+  }
+  27.2727272727% {
+    transform: translateX(18vw) translateY(6vh) scale(0.97);
+  }
+  31.8181818182% {
+    transform: translateX(39vw) translateY(-41vh) scale(0.47);
+  }
+  36.3636363636% {
+    transform: translateX(-48vw) translateY(21vh) scale(0.5);
+  }
+  40.9090909091% {
+    transform: translateX(9vw) translateY(14vh) scale(0.76);
+  }
+  45.4545454545% {
+    transform: translateX(49vw) translateY(4vh) scale(0.81);
+  }
+  50% {
+    transform: translateX(29vw) translateY(-34vh) scale(0.62);
+  }
+  54.5454545455% {
+    transform: translateX(-30vw) translateY(-48vh) scale(0.35);
+  }
+  59.0909090909% {
+    transform: translateX(20vw) translateY(32vh) scale(0.99);
+  }
+  63.6363636364% {
+    transform: translateX(18vw) translateY(0vh) scale(1);
+  }
+  68.1818181818% {
+    transform: translateX(37vw) translateY(40vh) scale(0.96);
+  }
+  72.7272727273% {
+    transform: translateX(28vw) translateY(-5vh) scale(0.65);
+  }
+  77.2727272727% {
+    transform: translateX(-37vw) translateY(-18vh) scale(0.82);
+  }
+  81.8181818182% {
+    transform: translateX(25vw) translateY(42vh) scale(0.58);
+  }
+  86.3636363636% {
+    transform: translateX(11vw) translateY(-8vh) scale(0.8);
+  }
+  90.9090909091% {
+    transform: translateX(11vw) translateY(-2vh) scale(0.52);
+  }
+  95.4545454545% {
+    transform: translateX(-33vw) translateY(-24vh) scale(0.84);
+  }
+  100% {
+    transform: translateX(-12vw) translateY(39vh) scale(0.76);
+  }
+}
+.firefly:nth-child(2) {
+  animation-name: move2;
+}
+.firefly:nth-child(2)::before {
+  animation-duration: 13s;
+}
+.firefly:nth-child(2)::after {
+  animation-duration: 13s, 7890ms;
+  animation-delay: 0ms, 4021ms;
+}
+
+@keyframes move2 {
+  0% {
+    transform: translateX(-48vw) translateY(-25vh) scale(0.66);
+  }
+  4% {
+    transform: translateX(35vw) translateY(-25vh) scale(0.59);
+  }
+  8% {
+    transform: translateX(50vw) translateY(-42vh) scale(0.91);
+  }
+  12% {
+    transform: translateX(-40vw) translateY(49vh) scale(0.72);
+  }
+  16% {
+    transform: translateX(5vw) translateY(-21vh) scale(0.51);
+  }
+  20% {
+    transform: translateX(-27vw) translateY(35vh) scale(0.6);
+  }
+  24% {
+    transform: translateX(1vw) translateY(-7vh) scale(0.58);
+  }
+  28% {
+    transform: translateX(30vw) translateY(12vh) scale(0.29);
+  }
+  32% {
+    transform: translateX(-21vw) translateY(-28vh) scale(0.84);
+  }
+  36% {
+    transform: translateX(-29vw) translateY(-8vh) scale(0.99);
+  }
+  40% {
+    transform: translateX(-18vw) translateY(-8vh) scale(0.79);
+  }
+  44% {
+    transform: translateX(44vw) translateY(7vh) scale(0.56);
+  }
+  48% {
+    transform: translateX(12vw) translateY(-10vh) scale(0.81);
+  }
+  52% {
+    transform: translateX(-3vw) translateY(-46vh) scale(0.28);
+  }
+  56% {
+    transform: translateX(26vw) translateY(-3vh) scale(0.34);
+  }
+  60% {
+    transform: translateX(14vw) translateY(-15vh) scale(0.72);
+  }
+  64% {
+    transform: translateX(41vw) translateY(-40vh) scale(0.78);
+  }
+  68% {
+    transform: translateX(-17vw) translateY(17vh) scale(0.68);
+  }
+  72% {
+    transform: translateX(-6vw) translateY(23vh) scale(0.77);
+  }
+  76% {
+    transform: translateX(-46vw) translateY(-4vh) scale(0.91);
+  }
+  80% {
+    transform: translateX(-44vw) translateY(2vh) scale(0.81);
+  }
+  84% {
+    transform: translateX(1vw) translateY(8vh) scale(0.29);
+  }
+  88% {
+    transform: translateX(45vw) translateY(24vh) scale(0.37);
+  }
+  92% {
+    transform: translateX(-10vw) translateY(-7vh) scale(0.76);
+  }
+  96% {
+    transform: translateX(40vw) translateY(-23vh) scale(0.69);
+  }
+  100% {
+    transform: translateX(-16vw) translateY(3vh) scale(0.3);
+  }
+}
+.firefly:nth-child(3) {
+  animation-name: move3;
+}
+.firefly:nth-child(3)::before {
+  animation-duration: 11s;
+}
+.firefly:nth-child(3)::after {
+  animation-duration: 11s, 6800ms;
+  animation-delay: 0ms, 5318ms;
+}
+
+@keyframes move3 {
+  0% {
+    transform: translateX(-22vw) translateY(-36vh) scale(0.36);
+  }
+  5.8823529412% {
+    transform: translateX(16vw) translateY(21vh) scale(0.63);
+  }
+  11.7647058824% {
+    transform: translateX(6vw) translateY(49vh) scale(0.27);
+  }
+  17.6470588235% {
+    transform: translateX(13vw) translateY(9vh) scale(0.87);
+  }
+  23.5294117647% {
+    transform: translateX(-20vw) translateY(-24vh) scale(0.98);
+  }
+  29.4117647059% {
+    transform: translateX(-45vw) translateY(15vh) scale(0.47);
+  }
+  35.2941176471% {
+    transform: translateX(46vw) translateY(24vh) scale(0.57);
+  }
+  41.1764705882% {
+    transform: translateX(-20vw) translateY(19vh) scale(0.4);
+  }
+  47.0588235294% {
+    transform: translateX(-21vw) translateY(39vh) scale(0.73);
+  }
+  52.9411764706% {
+    transform: translateX(16vw) translateY(37vh) scale(0.63);
+  }
+  58.8235294118% {
+    transform: translateX(-7vw) translateY(48vh) scale(0.88);
+  }
+  64.7058823529% {
+    transform: translateX(28vw) translateY(19vh) scale(0.26);
+  }
+  70.5882352941% {
+    transform: translateX(19vw) translateY(47vh) scale(0.74);
+  }
+  76.4705882353% {
+    transform: translateX(-3vw) translateY(-25vh) scale(0.58);
+  }
+  82.3529411765% {
+    transform: translateX(26vw) translateY(-14vh) scale(0.84);
+  }
+  88.2352941176% {
+    transform: translateX(-18vw) translateY(14vh) scale(0.52);
+  }
+  94.1176470588% {
+    transform: translateX(26vw) translateY(5vh) scale(0.6);
+  }
+  100% {
+    transform: translateX(-47vw) translateY(-32vh) scale(0.34);
+  }
+}
+.firefly:nth-child(4) {
+  animation-name: move4;
+}
+.firefly:nth-child(4)::before {
+  animation-duration: 12s;
+}
+.firefly:nth-child(4)::after {
+  animation-duration: 12s, 10494ms;
+  animation-delay: 0ms, 8178ms;
+}
+
+@keyframes move4 {
+  0% {
+    transform: translateX(-38vw) translateY(-36vh) scale(0.55);
+  }
+  3.5714285714% {
+    transform: translateX(-44vw) translateY(19vh) scale(0.72);
+  }
+  7.1428571429% {
+    transform: translateX(-24vw) translateY(-13vh) scale(0.8);
+  }
+  10.7142857143% {
+    transform: translateX(-39vw) translateY(28vh) scale(0.39);
+  }
+  14.2857142857% {
+    transform: translateX(12vw) translateY(-4vh) scale(0.34);
+  }
+  17.8571428571% {
+    transform: translateX(-33vw) translateY(41vh) scale(0.83);
+  }
+  21.4285714286% {
+    transform: translateX(0vw) translateY(15vh) scale(0.96);
+  }
+  25% {
+    transform: translateX(37vw) translateY(-45vh) scale(0.79);
+  }
+  28.5714285714% {
+    transform: translateX(-21vw) translateY(-7vh) scale(0.49);
+  }
+  32.1428571429% {
+    transform: translateX(-25vw) translateY(25vh) scale(0.32);
+  }
+  35.7142857143% {
+    transform: translateX(-25vw) translateY(-41vh) scale(0.58);
+  }
+  39.2857142857% {
+    transform: translateX(0vw) translateY(-47vh) scale(0.92);
+  }
+  42.8571428571% {
+    transform: translateX(28vw) translateY(-6vh) scale(0.69);
+  }
+  46.4285714286% {
+    transform: translateX(30vw) translateY(-14vh) scale(0.42);
+  }
+  50% {
+    transform: translateX(18vw) translateY(17vh) scale(0.89);
+  }
+  53.5714285714% {
+    transform: translateX(-21vw) translateY(-16vh) scale(0.53);
+  }
+  57.1428571429% {
+    transform: translateX(17vw) translateY(0vh) scale(0.75);
+  }
+  60.7142857143% {
+    transform: translateX(-7vw) translateY(42vh) scale(0.91);
+  }
+  64.2857142857% {
+    transform: translateX(-23vw) translateY(-30vh) scale(0.45);
+  }
+  67.8571428571% {
+    transform: translateX(35vw) translateY(41vh) scale(0.26);
+  }
+  71.4285714286% {
+    transform: translateX(-14vw) translateY(-8vh) scale(0.68);
+  }
+  75% {
+    transform: translateX(16vw) translateY(-47vh) scale(0.33);
+  }
+  78.5714285714% {
+    transform: translateX(23vw) translateY(-17vh) scale(0.47);
+  }
+  82.1428571429% {
+    transform: translateX(14vw) translateY(-34vh) scale(0.83);
+  }
+  85.7142857143% {
+    transform: translateX(47vw) translateY(-34vh) scale(0.8);
+  }
+  89.2857142857% {
+    transform: translateX(-35vw) translateY(48vh) scale(0.49);
+  }
+  92.8571428571% {
+    transform: translateX(32vw) translateY(-45vh) scale(0.35);
+  }
+  96.4285714286% {
+    transform: translateX(-38vw) translateY(43vh) scale(0.42);
+  }
+  100% {
+    transform: translateX(-8vw) translateY(34vh) scale(0.76);
+  }
+}
+.firefly:nth-child(5) {
+  animation-name: move5;
+}
+.firefly:nth-child(5)::before {
+  animation-duration: 16s;
+}
+.firefly:nth-child(5)::after {
+  animation-duration: 16s, 7581ms;
+  animation-delay: 0ms, 8046ms;
+}
+
+@keyframes move5 {
+  0% {
+    transform: translateX(-46vw) translateY(22vh) scale(0.68);
+  }
+  3.8461538462% {
+    transform: translateX(-18vw) translateY(35vh) scale(0.52);
+  }
+  7.6923076923% {
+    transform: translateX(32vw) translateY(-14vh) scale(0.45);
+  }
+  11.5384615385% {
+    transform: translateX(0vw) translateY(14vh) scale(0.81);
+  }
+  15.3846153846% {
+    transform: translateX(-41vw) translateY(-33vh) scale(0.66);
+  }
+  19.2307692308% {
+    transform: translateX(29vw) translateY(20vh) scale(0.77);
+  }
+  23.0769230769% {
+    transform: translateX(39vw) translateY(-4vh) scale(0.48);
+  }
+  26.9230769231% {
+    transform: translateX(44vw) translateY(-22vh) scale(0.94);
+  }
+  30.7692307692% {
+    transform: translateX(-1vw) translateY(-45vh) scale(0.26);
+  }
+  34.6153846154% {
+    transform: translateX(11vw) translateY(5vh) scale(0.42);
+  }
+  38.4615384615% {
+    transform: translateX(2vw) translateY(-12vh) scale(0.26);
+  }
+  42.3076923077% {
+    transform: translateX(-14vw) translateY(49vh) scale(0.56);
+  }
+  46.1538461538% {
+    transform: translateX(-9vw) translateY(21vh) scale(0.5);
+  }
+  50% {
+    transform: translateX(-34vw) translateY(-13vh) scale(0.42);
+  }
+  53.8461538462% {
+    transform: translateX(36vw) translateY(34vh) scale(0.99);
+  }
+  57.6923076923% {
+    transform: translateX(-20vw) translateY(37vh) scale(0.62);
+  }
+  61.5384615385% {
+    transform: translateX(-24vw) translateY(-47vh) scale(0.6);
+  }
+  65.3846153846% {
+    transform: translateX(10vw) translateY(-17vh) scale(0.98);
+  }
+  69.2307692308% {
+    transform: translateX(24vw) translateY(-29vh) scale(0.6);
+  }
+  73.0769230769% {
+    transform: translateX(48vw) translateY(-10vh) scale(0.62);
+  }
+  76.9230769231% {
+    transform: translateX(-21vw) translateY(31vh) scale(0.89);
+  }
+  80.7692307692% {
+    transform: translateX(-13vw) translateY(31vh) scale(0.86);
+  }
+  84.6153846154% {
+    transform: translateX(-18vw) translateY(45vh) scale(0.53);
+  }
+  88.4615384615% {
+    transform: translateX(20vw) translateY(-20vh) scale(0.69);
+  }
+  92.3076923077% {
+    transform: translateX(-31vw) translateY(20vh) scale(0.69);
+  }
+  96.1538461538% {
+    transform: translateX(-20vw) translateY(-34vh) scale(0.84);
+  }
+  100% {
+    transform: translateX(48vw) translateY(-37vh) scale(0.69);
+  }
+}
+.firefly:nth-child(6) {
+  animation-name: move6;
+}
+.firefly:nth-child(6)::before {
+  animation-duration: 18s;
+}
+.firefly:nth-child(6)::after {
+  animation-duration: 18s, 5629ms;
+  animation-delay: 0ms, 575ms;
+}
+
+@keyframes move6 {
+  0% {
+    transform: translateX(-11vw) translateY(43vh) scale(0.69);
+  }
+  4.7619047619% {
+    transform: translateX(-16vw) translateY(48vh) scale(0.53);
+  }
+  9.5238095238% {
+    transform: translateX(-35vw) translateY(17vh) scale(0.36);
+  }
+  14.2857142857% {
+    transform: translateX(23vw) translateY(16vh) scale(0.89);
+  }
+  19.0476190476% {
+    transform: translateX(40vw) translateY(-25vh) scale(0.5);
+  }
+  23.8095238095% {
+    transform: translateX(10vw) translateY(-15vh) scale(0.96);
+  }
+  28.5714285714% {
+    transform: translateX(-2vw) translateY(-19vh) scale(0.43);
+  }
+  33.3333333333% {
+    transform: translateX(-9vw) translateY(12vh) scale(0.92);
+  }
+  38.0952380952% {
+    transform: translateX(17vw) translateY(29vh) scale(0.49);
+  }
+  42.8571428571% {
+    transform: translateX(5vw) translateY(-30vh) scale(0.47);
+  }
+  47.619047619% {
+    transform: translateX(5vw) translateY(-41vh) scale(0.3);
+  }
+  52.380952381% {
+    transform: translateX(43vw) translateY(-33vh) scale(0.63);
+  }
+  57.1428571429% {
+    transform: translateX(41vw) translateY(34vh) scale(0.7);
+  }
+  61.9047619048% {
+    transform: translateX(-17vw) translateY(27vh) scale(0.5);
+  }
+  66.6666666667% {
+    transform: translateX(31vw) translateY(35vh) scale(0.75);
+  }
+  71.4285714286% {
+    transform: translateX(19vw) translateY(4vh) scale(0.55);
+  }
+  76.1904761905% {
+    transform: translateX(49vw) translateY(-10vh) scale(0.47);
+  }
+  80.9523809524% {
+    transform: translateX(2vw) translateY(-6vh) scale(0.66);
+  }
+  85.7142857143% {
+    transform: translateX(-3vw) translateY(25vh) scale(0.98);
+  }
+  90.4761904762% {
+    transform: translateX(4vw) translateY(6vh) scale(0.88);
+  }
+  95.2380952381% {
+    transform: translateX(-35vw) translateY(46vh) scale(0.99);
+  }
+  100% {
+    transform: translateX(6vw) translateY(-14vh) scale(0.26);
+  }
+}
+.firefly:nth-child(7) {
+  animation-name: move7;
+}
+.firefly:nth-child(7)::before {
+  animation-duration: 14s;
+}
+.firefly:nth-child(7)::after {
+  animation-duration: 14s, 10199ms;
+  animation-delay: 0ms, 2138ms;
+}
+
+@keyframes move7 {
+  0% {
+    transform: translateX(-35vw) translateY(-23vh) scale(0.42);
+  }
+  5.2631578947% {
+    transform: translateX(-20vw) translateY(-38vh) scale(0.6);
+  }
+  10.5263157895% {
+    transform: translateX(46vw) translateY(47vh) scale(0.91);
+  }
+  15.7894736842% {
+    transform: translateX(25vw) translateY(-27vh) scale(0.35);
+  }
+  21.0526315789% {
+    transform: translateX(1vw) translateY(-37vh) scale(0.28);
+  }
+  26.3157894737% {
+    transform: translateX(-31vw) translateY(-16vh) scale(0.38);
+  }
+  31.5789473684% {
+    transform: translateX(48vw) translateY(-13vh) scale(0.57);
+  }
+  36.8421052632% {
+    transform: translateX(-37vw) translateY(-48vh) scale(0.37);
+  }
+  42.1052631579% {
+    transform: translateX(38vw) translateY(32vh) scale(0.75);
+  }
+  47.3684210526% {
+    transform: translateX(5vw) translateY(-2vh) scale(0.26);
+  }
+  52.6315789474% {
+    transform: translateX(-26vw) translateY(-18vh) scale(0.47);
+  }
+  57.8947368421% {
+    transform: translateX(16vw) translateY(30vh) scale(0.89);
+  }
+  63.1578947368% {
+    transform: translateX(43vw) translateY(9vh) scale(0.66);
+  }
+  68.4210526316% {
+    transform: translateX(-47vw) translateY(37vh) scale(0.9);
+  }
+  73.6842105263% {
+    transform: translateX(44vw) translateY(24vh) scale(0.29);
+  }
+  78.9473684211% {
+    transform: translateX(-17vw) translateY(-31vh) scale(0.73);
+  }
+  84.2105263158% {
+    transform: translateX(1vw) translateY(37vh) scale(0.42);
+  }
+  89.4736842105% {
+    transform: translateX(15vw) translateY(24vh) scale(0.29);
+  }
+  94.7368421053% {
+    transform: translateX(10vw) translateY(-7vh) scale(0.93);
+  }
+  100% {
+    transform: translateX(46vw) translateY(22vh) scale(0.66);
+  }
+}
+.firefly:nth-child(8) {
+  animation-name: move8;
+}
+.firefly:nth-child(8)::before {
+  animation-duration: 10s;
+}
+.firefly:nth-child(8)::after {
+  animation-duration: 10s, 9463ms;
+  animation-delay: 0ms, 4726ms;
+}
+
+@keyframes move8 {
+  0% {
+    transform: translateX(22vw) translateY(-5vh) scale(0.64);
+  }
+  4.1666666667% {
+    transform: translateX(40vw) translateY(-41vh) scale(0.27);
+  }
+  8.3333333333% {
+    transform: translateX(-31vw) translateY(17vh) scale(0.59);
+  }
+  12.5% {
+    transform: translateX(6vw) translateY(50vh) scale(1);
+  }
+  16.6666666667% {
+    transform: translateX(26vw) translateY(-29vh) scale(0.3);
+  }
+  20.8333333333% {
+    transform: translateX(20vw) translateY(11vh) scale(0.48);
+  }
+  25% {
+    transform: translateX(-41vw) translateY(-13vh) scale(0.39);
+  }
+  29.1666666667% {
+    transform: translateX(48vw) translateY(-33vh) scale(0.71);
+  }
+  33.3333333333% {
+    transform: translateX(3vw) translateY(40vh) scale(0.83);
+  }
+  37.5% {
+    transform: translateX(-30vw) translateY(-31vh) scale(0.27);
+  }
+  41.6666666667% {
+    transform: translateX(-21vw) translateY(-30vh) scale(0.52);
+  }
+  45.8333333333% {
+    transform: translateX(-30vw) translateY(15vh) scale(0.39);
+  }
+  50% {
+    transform: translateX(32vw) translateY(27vh) scale(0.83);
+  }
+  54.1666666667% {
+    transform: translateX(-27vw) translateY(22vh) scale(0.63);
+  }
+  58.3333333333% {
+    transform: translateX(42vw) translateY(28vh) scale(0.79);
+  }
+  62.5% {
+    transform: translateX(14vw) translateY(7vh) scale(0.26);
+  }
+  66.6666666667% {
+    transform: translateX(7vw) translateY(-4vh) scale(0.95);
+  }
+  70.8333333333% {
+    transform: translateX(-28vw) translateY(-37vh) scale(0.99);
+  }
+  75% {
+    transform: translateX(49vw) translateY(-29vh) scale(0.87);
+  }
+  79.1666666667% {
+    transform: translateX(-45vw) translateY(-45vh) scale(0.92);
+  }
+  83.3333333333% {
+    transform: translateX(46vw) translateY(6vh) scale(0.71);
+  }
+  87.5% {
+    transform: translateX(-16vw) translateY(-29vh) scale(0.34);
+  }
+  91.6666666667% {
+    transform: translateX(-17vw) translateY(-34vh) scale(0.63);
+  }
+  95.8333333333% {
+    transform: translateX(-41vw) translateY(-16vh) scale(0.61);
+  }
+  100% {
+    transform: translateX(18vw) translateY(20vh) scale(0.99);
+  }
+}
+.firefly:nth-child(9) {
+  animation-name: move9;
+}
+.firefly:nth-child(9)::before {
+  animation-duration: 16s;
+}
+.firefly:nth-child(9)::after {
+  animation-duration: 16s, 10817ms;
+  animation-delay: 0ms, 826ms;
+}
+
+@keyframes move9 {
+  0% {
+    transform: translateX(46vw) translateY(-16vh) scale(0.92);
+  }
+  3.7037037037% {
+    transform: translateX(26vw) translateY(20vh) scale(0.87);
+  }
+  7.4074074074% {
+    transform: translateX(-43vw) translateY(23vh) scale(0.96);
+  }
+  11.1111111111% {
+    transform: translateX(-20vw) translateY(-47vh) scale(0.61);
+  }
+  14.8148148148% {
+    transform: translateX(-30vw) translateY(-42vh) scale(0.43);
+  }
+  18.5185185185% {
+    transform: translateX(5vw) translateY(7vh) scale(0.96);
+  }
+  22.2222222222% {
+    transform: translateX(36vw) translateY(26vh) scale(0.99);
+  }
+  25.9259259259% {
+    transform: translateX(-35vw) translateY(-44vh) scale(0.78);
+  }
+  29.6296296296% {
+    transform: translateX(41vw) translateY(-25vh) scale(0.46);
+  }
+  33.3333333333% {
+    transform: translateX(9vw) translateY(-32vh) scale(0.65);
+  }
+  37.037037037% {
+    transform: translateX(21vw) translateY(-14vh) scale(0.27);
+  }
+  40.7407407407% {
+    transform: translateX(-13vw) translateY(35vh) scale(0.76);
+  }
+  44.4444444444% {
+    transform: translateX(17vw) translateY(4vh) scale(0.95);
+  }
+  48.1481481481% {
+    transform: translateX(3vw) translateY(25vh) scale(0.26);
+  }
+  51.8518518519% {
+    transform: translateX(31vw) translateY(17vh) scale(0.79);
+  }
+  55.5555555556% {
+    transform: translateX(21vw) translateY(48vh) scale(0.8);
+  }
+  59.2592592593% {
+    transform: translateX(-47vw) translateY(49vh) scale(0.82);
+  }
+  62.962962963% {
+    transform: translateX(44vw) translateY(-27vh) scale(0.85);
+  }
+  66.6666666667% {
+    transform: translateX(-44vw) translateY(-18vh) scale(0.32);
+  }
+  70.3703703704% {
+    transform: translateX(-29vw) translateY(-37vh) scale(0.86);
+  }
+  74.0740740741% {
+    transform: translateX(-26vw) translateY(-18vh) scale(0.73);
+  }
+  77.7777777778% {
+    transform: translateX(-15vw) translateY(37vh) scale(0.41);
+  }
+  81.4814814815% {
+    transform: translateX(22vw) translateY(-46vh) scale(0.74);
+  }
+  85.1851851852% {
+    transform: translateX(-20vw) translateY(37vh) scale(0.84);
+  }
+  88.8888888889% {
+    transform: translateX(19vw) translateY(-45vh) scale(0.67);
+  }
+  92.5925925926% {
+    transform: translateX(-45vw) translateY(-31vh) scale(1);
+  }
+  96.2962962963% {
+    transform: translateX(29vw) translateY(22vh) scale(0.72);
+  }
+  100% {
+    transform: translateX(35vw) translateY(24vh) scale(0.62);
+  }
+}
+.firefly:nth-child(10) {
+  animation-name: move10;
+}
+.firefly:nth-child(10)::before {
+  animation-duration: 9s;
+}
+.firefly:nth-child(10)::after {
+  animation-duration: 9s, 8928ms;
+  animation-delay: 0ms, 1897ms;
+}
+
+@keyframes move10 {
+  0% {
+    transform: translateX(-39vw) translateY(-28vh) scale(0.35);
+  }
+  4.5454545455% {
+    transform: translateX(-41vw) translateY(2vh) scale(0.62);
+  }
+  9.0909090909% {
+    transform: translateX(-35vw) translateY(-40vh) scale(0.88);
+  }
+  13.6363636364% {
+    transform: translateX(35vw) translateY(34vh) scale(0.82);
+  }
+  18.1818181818% {
+    transform: translateX(-32vw) translateY(-2vh) scale(0.61);
+  }
+  22.7272727273% {
+    transform: translateX(-40vw) translateY(-5vh) scale(0.67);
+  }
+  27.2727272727% {
+    transform: translateX(-30vw) translateY(-26vh) scale(0.44);
+  }
+  31.8181818182% {
+    transform: translateX(-31vw) translateY(29vh) scale(0.3);
+  }
+  36.3636363636% {
+    transform: translateX(33vw) translateY(-40vh) scale(0.89);
+  }
+  40.9090909091% {
+    transform: translateX(17vw) translateY(-31vh) scale(0.4);
+  }
+  45.4545454545% {
+    transform: translateX(36vw) translateY(-35vh) scale(0.95);
+  }
+  50% {
+    transform: translateX(-5vw) translateY(-5vh) scale(0.72);
+  }
+  54.5454545455% {
+    transform: translateX(-13vw) translateY(-25vh) scale(0.75);
+  }
+  59.0909090909% {
+    transform: translateX(46vw) translateY(32vh) scale(0.34);
+  }
+  63.6363636364% {
+    transform: translateX(7vw) translateY(29vh) scale(0.54);
+  }
+  68.1818181818% {
+    transform: translateX(29vw) translateY(-26vh) scale(0.38);
+  }
+  72.7272727273% {
+    transform: translateX(-3vw) translateY(24vh) scale(0.59);
+  }
+  77.2727272727% {
+    transform: translateX(5vw) translateY(-34vh) scale(0.5);
+  }
+  81.8181818182% {
+    transform: translateX(-29vw) translateY(15vh) scale(0.51);
+  }
+  86.3636363636% {
+    transform: translateX(-30vw) translateY(42vh) scale(1);
+  }
+  90.9090909091% {
+    transform: translateX(27vw) translateY(41vh) scale(0.31);
+  }
+  95.4545454545% {
+    transform: translateX(28vw) translateY(-48vh) scale(0.83);
+  }
+  100% {
+    transform: translateX(-39vw) translateY(-9vh) scale(1);
+  }
+}
+.firefly:nth-child(11) {
+  animation-name: move11;
+}
+.firefly:nth-child(11)::before {
+  animation-duration: 13s;
+}
+.firefly:nth-child(11)::after {
+  animation-duration: 13s, 5265ms;
+  animation-delay: 0ms, 941ms;
+}
+
+@keyframes move11 {
+  0% {
+    transform: translateX(-8vw) translateY(18vh) scale(0.7);
+  }
+  4.347826087% {
+    transform: translateX(1vw) translateY(12vh) scale(0.54);
+  }
+  8.6956521739% {
+    transform: translateX(-13vw) translateY(-47vh) scale(0.38);
+  }
+  13.0434782609% {
+    transform: translateX(9vw) translateY(-28vh) scale(0.78);
+  }
+  17.3913043478% {
+    transform: translateX(-30vw) translateY(24vh) scale(0.85);
+  }
+  21.7391304348% {
+    transform: translateX(33vw) translateY(-44vh) scale(0.82);
+  }
+  26.0869565217% {
+    transform: translateX(-44vw) translateY(-41vh) scale(0.49);
+  }
+  30.4347826087% {
+    transform: translateX(27vw) translateY(0vh) scale(0.41);
+  }
+  34.7826086957% {
+    transform: translateX(-32vw) translateY(15vh) scale(0.82);
+  }
+  39.1304347826% {
+    transform: translateX(49vw) translateY(-36vh) scale(0.41);
+  }
+  43.4782608696% {
+    transform: translateX(11vw) translateY(-27vh) scale(0.31);
+  }
+  47.8260869565% {
+    transform: translateX(-33vw) translateY(-17vh) scale(0.89);
+  }
+  52.1739130435% {
+    transform: translateX(-43vw) translateY(-5vh) scale(0.35);
+  }
+  56.5217391304% {
+    transform: translateX(40vw) translateY(44vh) scale(0.96);
+  }
+  60.8695652174% {
+    transform: translateX(31vw) translateY(26vh) scale(0.46);
+  }
+  65.2173913043% {
+    transform: translateX(29vw) translateY(-34vh) scale(0.57);
+  }
+  69.5652173913% {
+    transform: translateX(-44vw) translateY(34vh) scale(0.77);
+  }
+  73.9130434783% {
+    transform: translateX(36vw) translateY(-6vh) scale(0.78);
+  }
+  78.2608695652% {
+    transform: translateX(-45vw) translateY(-32vh) scale(0.64);
+  }
+  82.6086956522% {
+    transform: translateX(-10vw) translateY(37vh) scale(0.88);
+  }
+  86.9565217391% {
+    transform: translateX(-41vw) translateY(36vh) scale(0.64);
+  }
+  91.3043478261% {
+    transform: translateX(30vw) translateY(-3vh) scale(0.31);
+  }
+  95.652173913% {
+    transform: translateX(-46vw) translateY(-41vh) scale(0.64);
+  }
+  100% {
+    transform: translateX(-3vw) translateY(-30vh) scale(0.66);
+  }
+}
+.firefly:nth-child(12) {
+  animation-name: move12;
+}
+.firefly:nth-child(12)::before {
+  animation-duration: 10s;
+}
+.firefly:nth-child(12)::after {
+  animation-duration: 10s, 7324ms;
+  animation-delay: 0ms, 7645ms;
+}
+
+@keyframes move12 {
+  0% {
+    transform: translateX(-43vw) translateY(14vh) scale(0.74);
+  }
+  5.2631578947% {
+    transform: translateX(-23vw) translateY(-25vh) scale(0.54);
+  }
+  10.5263157895% {
+    transform: translateX(-27vw) translateY(-31vh) scale(0.64);
+  }
+  15.7894736842% {
+    transform: translateX(30vw) translateY(9vh) scale(0.94);
+  }
+  21.0526315789% {
+    transform: translateX(-18vw) translateY(27vh) scale(0.8);
+  }
+  26.3157894737% {
+    transform: translateX(12vw) translateY(12vh) scale(0.73);
+  }
+  31.5789473684% {
+    transform: translateX(22vw) translateY(-35vh) scale(0.43);
+  }
+  36.8421052632% {
+    transform: translateX(35vw) translateY(-25vh) scale(0.29);
+  }
+  42.1052631579% {
+    transform: translateX(-20vw) translateY(12vh) scale(0.72);
+  }
+  47.3684210526% {
+    transform: translateX(-46vw) translateY(-8vh) scale(0.97);
+  }
+  52.6315789474% {
+    transform: translateX(-16vw) translateY(26vh) scale(0.81);
+  }
+  57.8947368421% {
+    transform: translateX(-7vw) translateY(31vh) scale(0.32);
+  }
+  63.1578947368% {
+    transform: translateX(35vw) translateY(-25vh) scale(0.79);
+  }
+  68.4210526316% {
+    transform: translateX(-6vw) translateY(4vh) scale(0.42);
+  }
+  73.6842105263% {
+    transform: translateX(-40vw) translateY(-16vh) scale(0.84);
+  }
+  78.9473684211% {
+    transform: translateX(10vw) translateY(-46vh) scale(0.75);
+  }
+  84.2105263158% {
+    transform: translateX(-35vw) translateY(-40vh) scale(0.59);
+  }
+  89.4736842105% {
+    transform: translateX(39vw) translateY(43vh) scale(0.88);
+  }
+  94.7368421053% {
+    transform: translateX(11vw) translateY(19vh) scale(0.39);
+  }
+  100% {
+    transform: translateX(-32vw) translateY(15vh) scale(0.32);
+  }
+}
+.firefly:nth-child(13) {
+  animation-name: move13;
+}
+.firefly:nth-child(13)::before {
+  animation-duration: 12s;
+}
+.firefly:nth-child(13)::after {
+  animation-duration: 12s, 9787ms;
+  animation-delay: 0ms, 3907ms;
+}
+
+@keyframes move13 {
+  0% {
+    transform: translateX(-27vw) translateY(-7vh) scale(1);
+  }
+  4.7619047619% {
+    transform: translateX(38vw) translateY(-27vh) scale(0.62);
+  }
+  9.5238095238% {
+    transform: translateX(-44vw) translateY(-44vh) scale(0.63);
+  }
+  14.2857142857% {
+    transform: translateX(-27vw) translateY(34vh) scale(0.73);
+  }
+  19.0476190476% {
+    transform: translateX(-41vw) translateY(-9vh) scale(0.87);
+  }
+  23.8095238095% {
+    transform: translateX(6vw) translateY(-4vh) scale(0.71);
+  }
+  28.5714285714% {
+    transform: translateX(-9vw) translateY(32vh) scale(0.71);
+  }
+  33.3333333333% {
+    transform: translateX(42vw) translateY(-11vh) scale(0.33);
+  }
+  38.0952380952% {
+    transform: translateX(6vw) translateY(-6vh) scale(0.51);
+  }
+  42.8571428571% {
+    transform: translateX(-6vw) translateY(-37vh) scale(0.69);
+  }
+  47.619047619% {
+    transform: translateX(7vw) translateY(-33vh) scale(0.98);
+  }
+  52.380952381% {
+    transform: translateX(-22vw) translateY(-28vh) scale(0.68);
+  }
+  57.1428571429% {
+    transform: translateX(18vw) translateY(-24vh) scale(0.72);
+  }
+  61.9047619048% {
+    transform: translateX(-26vw) translateY(-10vh) scale(0.35);
+  }
+  66.6666666667% {
+    transform: translateX(31vw) translateY(20vh) scale(0.61);
+  }
+  71.4285714286% {
+    transform: translateX(44vw) translateY(0vh) scale(0.83);
+  }
+  76.1904761905% {
+    transform: translateX(11vw) translateY(37vh) scale(0.92);
+  }
+  80.9523809524% {
+    transform: translateX(23vw) translateY(-22vh) scale(0.85);
+  }
+  85.7142857143% {
+    transform: translateX(38vw) translateY(33vh) scale(0.87);
+  }
+  90.4761904762% {
+    transform: translateX(-21vw) translateY(19vh) scale(0.59);
+  }
+  95.2380952381% {
+    transform: translateX(-2vw) translateY(16vh) scale(0.82);
+  }
+  100% {
+    transform: translateX(-2vw) translateY(-43vh) scale(0.26);
+  }
+}
+.firefly:nth-child(14) {
+  animation-name: move14;
+}
+.firefly:nth-child(14)::before {
+  animation-duration: 15s;
+}
+.firefly:nth-child(14)::after {
+  animation-duration: 15s, 10518ms;
+  animation-delay: 0ms, 6504ms;
+}
+
+@keyframes move14 {
+  0% {
+    transform: translateX(-48vw) translateY(35vh) scale(0.26);
+  }
+  3.8461538462% {
+    transform: translateX(40vw) translateY(-19vh) scale(0.32);
+  }
+  7.6923076923% {
+    transform: translateX(50vw) translateY(42vh) scale(0.92);
+  }
+  11.5384615385% {
+    transform: translateX(-13vw) translateY(-18vh) scale(0.75);
+  }
+  15.3846153846% {
+    transform: translateX(2vw) translateY(32vh) scale(0.76);
+  }
+  19.2307692308% {
+    transform: translateX(-33vw) translateY(-47vh) scale(0.81);
+  }
+  23.0769230769% {
+    transform: translateX(-16vw) translateY(40vh) scale(0.27);
+  }
+  26.9230769231% {
+    transform: translateX(34vw) translateY(40vh) scale(0.45);
+  }
+  30.7692307692% {
+    transform: translateX(16vw) translateY(9vh) scale(0.43);
+  }
+  34.6153846154% {
+    transform: translateX(-48vw) translateY(-36vh) scale(1);
+  }
+  38.4615384615% {
+    transform: translateX(28vw) translateY(22vh) scale(0.74);
+  }
+  42.3076923077% {
+    transform: translateX(27vw) translateY(40vh) scale(0.79);
+  }
+  46.1538461538% {
+    transform: translateX(-21vw) translateY(-39vh) scale(0.4);
+  }
+  50% {
+    transform: translateX(3vw) translateY(-34vh) scale(1);
+  }
+  53.8461538462% {
+    transform: translateX(-11vw) translateY(31vh) scale(0.62);
+  }
+  57.6923076923% {
+    transform: translateX(-8vw) translateY(37vh) scale(0.74);
+  }
+  61.5384615385% {
+    transform: translateX(-39vw) translateY(32vh) scale(0.34);
+  }
+  65.3846153846% {
+    transform: translateX(-33vw) translateY(22vh) scale(0.9);
+  }
+  69.2307692308% {
+    transform: translateX(14vw) translateY(-19vh) scale(0.49);
+  }
+  73.0769230769% {
+    transform: translateX(-35vw) translateY(-26vh) scale(0.62);
+  }
+  76.9230769231% {
+    transform: translateX(-16vw) translateY(31vh) scale(0.37);
+  }
+  80.7692307692% {
+    transform: translateX(-27vw) translateY(50vh) scale(0.55);
+  }
+  84.6153846154% {
+    transform: translateX(-29vw) translateY(5vh) scale(0.55);
+  }
+  88.4615384615% {
+    transform: translateX(16vw) translateY(17vh) scale(0.84);
+  }
+  92.3076923077% {
+    transform: translateX(-19vw) translateY(-9vh) scale(0.87);
+  }
+  96.1538461538% {
+    transform: translateX(25vw) translateY(42vh) scale(0.35);
+  }
+  100% {
+    transform: translateX(30vw) translateY(17vh) scale(0.85);
+  }
+}
+.firefly:nth-child(15) {
+  animation-name: move15;
+}
+.firefly:nth-child(15)::before {
+  animation-duration: 15s;
+}
+.firefly:nth-child(15)::after {
+  animation-duration: 15s, 5811ms;
+  animation-delay: 0ms, 4578ms;
+}
+
+@keyframes move15 {
+  0% {
+    transform: translateX(-43vw) translateY(9vh) scale(0.72);
+  }
+  4.7619047619% {
+    transform: translateX(-33vw) translateY(-44vh) scale(0.76);
+  }
+  9.5238095238% {
+    transform: translateX(30vw) translateY(36vh) scale(0.97);
+  }
+  14.2857142857% {
+    transform: translateX(-48vw) translateY(8vh) scale(0.68);
+  }
+  19.0476190476% {
+    transform: translateX(-8vw) translateY(34vh) scale(0.46);
+  }
+  23.8095238095% {
+    transform: translateX(-28vw) translateY(-42vh) scale(0.74);
+  }
+  28.5714285714% {
+    transform: translateX(10vw) translateY(43vh) scale(0.35);
+  }
+  33.3333333333% {
+    transform: translateX(43vw) translateY(-3vh) scale(0.51);
+  }
+  38.0952380952% {
+    transform: translateX(27vw) translateY(-4vh) scale(0.62);
+  }
+  42.8571428571% {
+    transform: translateX(13vw) translateY(-7vh) scale(0.98);
+  }
+  47.619047619% {
+    transform: translateX(-15vw) translateY(-48vh) scale(0.45);
+  }
+  52.380952381% {
+    transform: translateX(32vw) translateY(-4vh) scale(0.65);
+  }
+  57.1428571429% {
+    transform: translateX(-14vw) translateY(-47vh) scale(0.38);
+  }
+  61.9047619048% {
+    transform: translateX(42vw) translateY(-30vh) scale(0.75);
+  }
+  66.6666666667% {
+    transform: translateX(30vw) translateY(-22vh) scale(0.69);
+  }
+  71.4285714286% {
+    transform: translateX(36vw) translateY(3vh) scale(0.71);
+  }
+  76.1904761905% {
+    transform: translateX(-14vw) translateY(7vh) scale(0.86);
+  }
+  80.9523809524% {
+    transform: translateX(49vw) translateY(-29vh) scale(0.32);
+  }
+  85.7142857143% {
+    transform: translateX(-2vw) translateY(-2vh) scale(1);
+  }
+  90.4761904762% {
+    transform: translateX(18vw) translateY(-38vh) scale(0.63);
+  }
+  95.2380952381% {
+    transform: translateX(15vw) translateY(23vh) scale(0.6);
+  }
+  100% {
+    transform: translateX(0vw) translateY(-6vh) scale(0.82);
+  }
+}
+@keyframes drift {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flash {
+  0%, 30%, 100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw yellow;
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw yellow;
+  }
+}
+    </style>
+</head>
+
+<body>
+    
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+
+    <div class="mainHeader">
+        <h1>Favourite Cat Breeds !</h1>
+    </div>
+    <div class="animalsTextPic
+    ">
+        <h2 class="breedNameOnPic">Persian</h2>
+        <img class="cats" src="Pictures/PersianCat.jpg" alt="Persian Cat">
+        <p class="textUnderPic">The Persian cat (Persian: گربه پارسی, romanized: Gorbe'-ye Pârsi) is a long-haired breed
+            of cat characterized
+            by its round face and short muzzle. It is also known as the "Persian Longhair" in English-speaking
+            countries. The first documented ancestors of Persian cats were imported into Italy from Persia around
+            1620. Widely recognized by cat fancy since the late 19th century, Persian cats were first adopted by
+            the English, and then mainly by American breeders after World War II. Some cat fancier organizations' breed
+            standards subsume the Himalayan and Exotic Shorthair as variants of this breed, while others treat them as
+            separate breeds.</p>
+    </div>
+    <div class="animalsTextPic
+    ">
+        <h2 class="breedNameOnPic">Siberian</h2>
+        <img class="cats" src="Pictures/SiberianCat.jpg" alt="Siberian Cat">
+        <p class="textUnderPic">The Siberian is a centuries-old landrace (natural variety) of domestic cat in Russia
+            and recently
+            developed as a formal breed with standards promulgated the world over since the late 1980s.
+            Siberians vary from medium to medium-large in size. The formal name of the breed is Siberian Forest
+            Cat, but usually it's simply called the Siberian or Siberian cat. Another formal breed name is the
+            Moscow Semi-Longhair. The cat is an ancient breed that is now believed to be ancestral to all modern
+            long-haired cats. The cat has similarities with the Norwegian forest cat, to which it is likely closely
+            related. It is a natural breed from Siberia and the national cat of Russia. While it began as a
+            landrace, it is selectively bred and pedigreed today in at least seven major cat fancier and breeder
+            organizations. The colorpoint variant of the breed is called the Neva Masquerade by some registries,
+            including Fédération Internationale Féline (FIFé).</p>
+    </div>
+    <div class="animalsTextPic
+    ">
+        <h2 class="breedNameOnPic">Scottish Fold </h2>
+        <img class="cats" src="Pictures/ScottishFoldCat.jpg" alt="Scottish Fold Cat">
+        <p class="textUnderPic">The Scottish Fold is a breed of domestic cat with a natural dominant gene mutation that
+            affects cartilage throughout the body, causing the ears to "fold", bending forward and down towards the
+            front of the head, which gives the cat what is often described as an "owl-like" appearance.
+            Lilac-colored Scottish Fold kitten
+            Originally called lop-eared or lops after the lop-eared rabbit, Scottish Fold became the breed's name in
+            1966. Depending on registries, longhaired Scottish Folds are varyingly known as Highland Fold, Scottish
+            Fold Longhair, Longhair Fold and Coupari.</p>
+
+    </div>
+    <div class="animalsTextPic
+    ">
+        <h2 class="breedNameOnPic">Norwegian Forest Cat </h2>
+        <img class="cats" src="Pictures/NorwegianForestCat.jpg" alt="Norwegian Forest Cat">
+        <p class="textUnderPic">The Norwegian Forest cat (Norwegian: Norsk skogkatt and Norsk skaukatt) is a breed of
+            domestic cat originating in Northern Europe. This natural breed is adapted to a very cold climate, with a
+            top coat of long, glossy, water-shedding hair and a woolly undercoat for insulation. The breed's ancestors
+            may have been a landrace of short-haired cats brought to Norway about A.D. 1000 by the Vikings, who may also
+            have brought with them long-haired cats, like those ancestral to the modern Siberian and Turkish Angora.
+            During World War II, the Norwegian Forest cat was nearly extinct; then the Norwegian Forest Cat Club's
+            breeding program increased the cat's number. It was registered as a breed with the European Fédération
+            Internationale Féline in the 1970s, when a cat fancier, Carl-Fredrik Nordane, took notice of the breed and
+            made efforts to register it. The breed is very popular in Norway, Denmark, Sweden, Iceland, and France.</p>
+    </div>
+    <div class="mainHeader">
+        <h1>Favourite Dog Breeds ! </h1>
+    </div>
+    <div class="animalsTextPic">
+        <h2 class="breedNameOnPic">German Shepherd</h2>
+        <img class="dogs" src="Pictures/GermanShepherd.jpg" alt="German Shepherd">
+        <p class="textUnderPic">The German Shepherd Dog, also known as the Alsatian, is a German breed of working dog
+            of medium to large size. The breed was developed by Max von Stephanitz using various traditional German
+            herding dogs from 1899.
+
+            It was originally bred as a herding dog, for herding sheep. It has since been used in many other types of
+            work, including disability assistance, search-and-rescue, police work and warfare. It is commonly kept as a
+            companion dog, and according to the Fédération Cynologique Internationale had the second-highest number of
+            annual registrations in 2013.</p>
+    </div>
+    <div class="animalsTextPic">
+        <h2 class="breedNameOnPic">Shiba Inu</h2>
+        <img class="dogs" src="Pictures/ShibaInu.jpg" alt="Shiba Inu">
+        <p class="textUnderPic">The Shiba Inu (柴犬, Japanese: [ɕiba inɯ]) is a breed of hunting dog from Japan. A
+            small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to
+            Japan.
+
+            A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba Inu
+            was originally bred for hunting. It looks similar to and is often mistaken for other Japanese dog
+            breeds such as the Akita Inu or Hokkaido, but the Shiba Inu is a different breed with a distinct blood line,
+            temperament, and smaller size than other Japanese dog breeds.</p>
+    </div>
+    <div class="animalsTextPic">
+        <h2 class="breedNameOnPic">Golden Retriever</h2>
+        <img class="dogs" src="Pictures/GoldenRetriever2.jpg" alt="Golden Retriever">
+        <p class="textUnderPic">The Golden Retriever is a British breed of retriever dog of medium size. It is
+            characterised by a gentle and affectionate nature and a striking golden coat. It is commonly kept as a pet
+            and is among the most frequently registered breeds in several Western countries. It is a frequent competitor
+            in dog shows and obedience trials; it is also used as a gundog, and may be trained for use as a guide dog.
+
+            The breed was created by Sir Dudley Marjoribanks at his Scottish estate Guisachan in the late nineteenth
+            century. He cross-bred Flat-coated Retrievers with Tweed Water Spaniels, with some further infusions of Red
+            Setter, Labrador Retriever and Bloodhound. The breed was recognised by the Kennel Club in 1913, and during
+            the interwar period spread to many parts of the world.</p>
+    </div>
+    <div class="animalsTextPic">
+        <h2 class="breedNameOnPic">Labrador Retriever</h2>
+        <img class="dogs" src="Pictures/LabradorRetriever.jpg" alt="Labrador Retriever">
+        <p class="textUnderPic">The Labrador Retriever or Labrador is a British breed of retriever gun dog. It was
+            developed in the United Kingdom from fishing dogs imported from the colony of Newfoundland (now a province
+            of Canada), and was named after the Labrador region of that colony. It is among the most commonly kept dogs
+            in several countries, particularly in the Western world.
+
+            The Labrador is loyal, obedient and playful. It was bred as a sporting and hunting dog, but is widely kept
+            as a companion dog. It may also be trained as a guide or assistance dog, or for rescue or therapy work.
+
+            In the 1830s, the 10th Earl of Home and his nephews the 5th Duke of Buccleuch and Lord John Scott,
+            imported progenitors of the breed from Newfoundland to Europe for use as gundogs. Another early advocate of
+            these Newfoundland fishing dogs was the 2nd Earl of Malmesbury, who bred them for their expertise in
+            waterfowling.
+
+            During the 1880s, the 3rd Earl of Malmesbury, the 6th Duke of Buccleuch, and the 12th Earl of Home
+            collaborated to develop and establish the Labrador Retriever breed. The dogs Buccleuch Avon and Buccleuch
+            Ned, given by Malmesbury to Buccleuch, were mated with bitches carrying blood from those originally imported
+            by the 5th Duke and the 10th Earl of Home. The offspring are the ancestors of all modern Labradors.</p>
+    </div>
+</body>
+
+</html>
