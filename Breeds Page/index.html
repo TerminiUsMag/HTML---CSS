@@ -69,6 +69,25 @@
             width: 350px;
             font-size: large;
         }
+        .btn{
+            border:none;
+            background-color: inherit;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 100%;
+        }
+        .btn:hover{background:#eee;}
+        .click{
+            cursor:pointer;
+            padding: 14px 28px;
+            font-size: 16px;
+            border-radius: 15px;
+            border: none;
+        }
+        .click:hover{background: white;}
+
     </style>
 </head>
 
@@ -193,8 +212,14 @@
             Ned, given by Malmesbury to Buccleuch, were mated with bitches carrying blood from those originally imported
             by the 5th Duke and the 10th Earl of Home. The offspring are the ancestors of all modern Labradors.</p>
     </div>
-    <div><button type="button">Click me!</button></div>
+    <div><button class="click" type="button">Click me!</button></div>
     <div><button type="menu">Menu button!</button></div>
+
+    <button class="btn success">Success</button>
+    <button class="btn info">Info</button>
+    <button class="btn warning">Warning</button>
+    <button class="btn danger">Danger</button>
+    <button class="btn default">Default</button>
 </body>
 
 </html>
