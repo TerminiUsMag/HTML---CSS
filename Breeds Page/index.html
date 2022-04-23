@@ -11,15 +11,14 @@
             color: white;
             background-color: inherit;
             align-content: center;
-            
+
         }
-        
+
         .header {
             margin-bottom: 50px;
             margin: auto;
             max-width: auto;
             align-items: center;
-            
             padding: 10px;
             padding-left: 15px;
             display: inline-block;
@@ -33,6 +32,11 @@
             font-style: italic;
             font-weight: bold;
             font-family: serif;
+        }
+
+        .center {
+            margin-left: 20%;
+            width: fit-content;
         }
 
         body {
@@ -115,137 +119,175 @@
             background: #04AA6D;
             color: white;
         }
+        .delete{
+            width: 100%;
+        }
     </style>
 </head>
 
 <body>
-    <div class="mainHeader">
-        <button class="btn success">Success</button>
-        <button class="btn info">Info</button>
-        <button class="btn breeds">Breeds</button>
-        <h1 class="header">Favourite Cat Breeds !</h1>
-        <button class="btn warning">Warning</button>
-        <button class="btn danger">Danger</button>
-        <button class="btn default">Default</button>
-    </div>
-    <div class="animalsTextPic
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "";
+        }
+    </script>
+    <div id="demo">
+
+        <div class="mainHeader">
+            <button class="btn success">Success</button>
+            <button class="btn info">Info</button>
+            <button class="btn breeds">Breeds</button>
+            <h1 class="header">Favourite Cat Breeds !</h1>
+            <button class="btn warning">Warning</button>
+            <button class="btn danger">Danger</button>
+            <button class="btn default">Default</button>
+        </div>
+        <div class="animalsTextPic
+            ">
+            <h2 class="breedNameOnPic">Persian</h2>
+            <img class="cats" src="Pictures/PersianCat.jpg" alt="Persian Cat">
+            <p class="textUnderPic">The Persian cat (Persian: گربه پارسی, romanized: Gorbe'-ye Pârsi) is a long-haired
+                breed
+                of cat characterized
+                by its round face and short muzzle. It is also known as the "Persian Longhair" in English-speaking
+                countries. The first documented ancestors of Persian cats were imported into Italy from Persia around
+                1620. Widely recognized by cat fancy since the late 19th century, Persian cats were first adopted by
+                the English, and then mainly by American breeders after World War II. Some cat fancier organizations'
+                breed
+                standards subsume the Himalayan and Exotic Shorthair as variants of this breed, while others treat them
+                as
+                separate breeds.</p>
+        </div>
+        <div class="animalsTextPic
+            ">
+            <h2 class="breedNameOnPic">Siberian</h2>
+            <img class="cats" src="Pictures/SiberianCat.jpg" alt="Siberian Cat">
+            <p class="textUnderPic">The Siberian is a centuries-old landrace (natural variety) of domestic cat in Russia
+                and recently
+                developed as a formal breed with standards promulgated the world over since the late 1980s.
+                Siberians vary from medium to medium-large in size. The formal name of the breed is Siberian Forest
+                Cat, but usually it's simply called the Siberian or Siberian cat. Another formal breed name is the
+                Moscow Semi-Longhair. The cat is an ancient breed that is now believed to be ancestral to all modern
+                long-haired cats. The cat has similarities with the Norwegian forest cat, to which it is likely closely
+                related. It is a natural breed from Siberia and the national cat of Russia. While it began as a
+                landrace, it is selectively bred and pedigreed today in at least seven major cat fancier and breeder
+                organizations. The colorpoint variant of the breed is called the Neva Masquerade by some registries,
+                including Fédération Internationale Féline (FIFé).</p>
+        </div>
+        <div class="animalsTextPic
+            ">
+            <h2 class="breedNameOnPic">Scottish Fold </h2>
+            <img class="cats" src="Pictures/ScottishFoldCat.jpg" alt="Scottish Fold Cat">
+            <p class="textUnderPic">The Scottish Fold is a breed of domestic cat with a natural dominant gene mutation
+                that
+                affects cartilage throughout the body, causing the ears to "fold", bending forward and down towards the
+                front of the head, which gives the cat what is often described as an "owl-like" appearance.
+                Lilac-colored Scottish Fold kitten
+                Originally called lop-eared or lops after the lop-eared rabbit, Scottish Fold became the breed's name in
+                1966. Depending on registries, longhaired Scottish Folds are varyingly known as Highland Fold, Scottish
+                Fold Longhair, Longhair Fold and Coupari.</p>
+
+        </div>
+        <div class="animalsTextPic
     ">
-        <h2 class="breedNameOnPic">Persian</h2>
-        <img class="cats" src="Pictures/PersianCat.jpg" alt="Persian Cat">
-        <p class="textUnderPic">The Persian cat (Persian: گربه پارسی, romanized: Gorbe'-ye Pârsi) is a long-haired breed
-            of cat characterized
-            by its round face and short muzzle. It is also known as the "Persian Longhair" in English-speaking
-            countries. The first documented ancestors of Persian cats were imported into Italy from Persia around
-            1620. Widely recognized by cat fancy since the late 19th century, Persian cats were first adopted by
-            the English, and then mainly by American breeders after World War II. Some cat fancier organizations' breed
-            standards subsume the Himalayan and Exotic Shorthair as variants of this breed, while others treat them as
-            separate breeds.</p>
-    </div>
-    <div class="animalsTextPic
-    ">
-        <h2 class="breedNameOnPic">Siberian</h2>
-        <img class="cats" src="Pictures/SiberianCat.jpg" alt="Siberian Cat">
-        <p class="textUnderPic">The Siberian is a centuries-old landrace (natural variety) of domestic cat in Russia
-            and recently
-            developed as a formal breed with standards promulgated the world over since the late 1980s.
-            Siberians vary from medium to medium-large in size. The formal name of the breed is Siberian Forest
-            Cat, but usually it's simply called the Siberian or Siberian cat. Another formal breed name is the
-            Moscow Semi-Longhair. The cat is an ancient breed that is now believed to be ancestral to all modern
-            long-haired cats. The cat has similarities with the Norwegian forest cat, to which it is likely closely
-            related. It is a natural breed from Siberia and the national cat of Russia. While it began as a
-            landrace, it is selectively bred and pedigreed today in at least seven major cat fancier and breeder
-            organizations. The colorpoint variant of the breed is called the Neva Masquerade by some registries,
-            including Fédération Internationale Féline (FIFé).</p>
-    </div>
-    <div class="animalsTextPic
-    ">
-        <h2 class="breedNameOnPic">Scottish Fold </h2>
-        <img class="cats" src="Pictures/ScottishFoldCat.jpg" alt="Scottish Fold Cat">
-        <p class="textUnderPic">The Scottish Fold is a breed of domestic cat with a natural dominant gene mutation that
-            affects cartilage throughout the body, causing the ears to "fold", bending forward and down towards the
-            front of the head, which gives the cat what is often described as an "owl-like" appearance.
-            Lilac-colored Scottish Fold kitten
-            Originally called lop-eared or lops after the lop-eared rabbit, Scottish Fold became the breed's name in
-            1966. Depending on registries, longhaired Scottish Folds are varyingly known as Highland Fold, Scottish
-            Fold Longhair, Longhair Fold and Coupari.</p>
+            <h2 class="breedNameOnPic">Norwegian Forest Cat </h2>
+            <img class="cats" src="Pictures/NorwegianForestCat.jpg" alt="Norwegian Forest Cat">
+            <p class="textUnderPic">The Norwegian Forest cat (Norwegian: Norsk skogkatt and Norsk skaukatt) is a breed
+                of
+                domestic cat originating in Northern Europe. This natural breed is adapted to a very cold climate, with
+                a
+                top coat of long, glossy, water-shedding hair and a woolly undercoat for insulation. The breed's
+                ancestors
+                may have been a landrace of short-haired cats brought to Norway about A.D. 1000 by the Vikings, who may
+                also
+                have brought with them long-haired cats, like those ancestral to the modern Siberian and Turkish Angora.
+                During World War II, the Norwegian Forest cat was nearly extinct; then the Norwegian Forest Cat Club's
+                breeding program increased the cat's number. It was registered as a breed with the European Fédération
+                Internationale Féline in the 1970s, when a cat fancier, Carl-Fredrik Nordane, took notice of the breed
+                and
+                made efforts to register it. The breed is very popular in Norway, Denmark, Sweden, Iceland, and France.
+            </p>
+        </div>
+        <div class="mainHeader">
+            <h1 class="header center">Favourite Dog Breeds ! </h1>
+        </div>
+        <div class="animalsTextPic">
+            <h2 class="breedNameOnPic">German Shepherd</h2>
+            <img class="dogs" src="Pictures/GermanShepherd.jpg" alt="German Shepherd">
+            <p class="textUnderPic">The German Shepherd Dog, also known as the Alsatian, is a German breed of working
+                dog
+                of medium to large size. The breed was developed by Max von Stephanitz using various traditional German
+                herding dogs from 1899.
 
-    </div>
-    <div class="animalsTextPic
-    ">
-        <h2 class="breedNameOnPic">Norwegian Forest Cat </h2>
-        <img class="cats" src="Pictures/NorwegianForestCat.jpg" alt="Norwegian Forest Cat">
-        <p class="textUnderPic">The Norwegian Forest cat (Norwegian: Norsk skogkatt and Norsk skaukatt) is a breed of
-            domestic cat originating in Northern Europe. This natural breed is adapted to a very cold climate, with a
-            top coat of long, glossy, water-shedding hair and a woolly undercoat for insulation. The breed's ancestors
-            may have been a landrace of short-haired cats brought to Norway about A.D. 1000 by the Vikings, who may also
-            have brought with them long-haired cats, like those ancestral to the modern Siberian and Turkish Angora.
-            During World War II, the Norwegian Forest cat was nearly extinct; then the Norwegian Forest Cat Club's
-            breeding program increased the cat's number. It was registered as a breed with the European Fédération
-            Internationale Féline in the 1970s, when a cat fancier, Carl-Fredrik Nordane, took notice of the breed and
-            made efforts to register it. The breed is very popular in Norway, Denmark, Sweden, Iceland, and France.</p>
-    </div>
-    <div class="mainHeader">
-        <h1>Favourite Dog Breeds ! </h1>
-    </div>
-    <div class="animalsTextPic">
-        <h2 class="breedNameOnPic">German Shepherd</h2>
-        <img class="dogs" src="Pictures/GermanShepherd.jpg" alt="German Shepherd">
-        <p class="textUnderPic">The German Shepherd Dog, also known as the Alsatian, is a German breed of working dog
-            of medium to large size. The breed was developed by Max von Stephanitz using various traditional German
-            herding dogs from 1899.
+                It was originally bred as a herding dog, for herding sheep. It has since been used in many other types
+                of
+                work, including disability assistance, search-and-rescue, police work and warfare. It is commonly kept
+                as a
+                companion dog, and according to the Fédération Cynologique Internationale had the second-highest number
+                of
+                annual registrations in 2013.</p>
+        </div>
+        <div class="animalsTextPic">
+            <h2 class="breedNameOnPic">Shiba Inu</h2>
+            <img class="dogs" src="Pictures/ShibaInu.jpg" alt="Shiba Inu">
+            <p class="textUnderPic">The Shiba Inu (柴犬, Japanese: [ɕiba inɯ]) is a breed of hunting dog from Japan. A
+                small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to
+                Japan.
 
-            It was originally bred as a herding dog, for herding sheep. It has since been used in many other types of
-            work, including disability assistance, search-and-rescue, police work and warfare. It is commonly kept as a
-            companion dog, and according to the Fédération Cynologique Internationale had the second-highest number of
-            annual registrations in 2013.</p>
+                A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba
+                Inu
+                was originally bred for hunting. It looks similar to and is often mistaken for other Japanese dog
+                breeds such as the Akita Inu or Hokkaido, but the Shiba Inu is a different breed with a distinct blood
+                line,
+                temperament, and smaller size than other Japanese dog breeds.</p>
+        </div>
+        <div class="animalsTextPic">
+            <h2 class="breedNameOnPic">Golden Retriever</h2>
+            <img class="dogs" src="Pictures/GoldenRetriever2.jpg" alt="Golden Retriever">
+            <p class="textUnderPic">The Golden Retriever is a British breed of retriever dog of medium size. It is
+                characterised by a gentle and affectionate nature and a striking golden coat. It is commonly kept as a
+                pet
+                and is among the most frequently registered breeds in several Western countries. It is a frequent
+                competitor
+                in dog shows and obedience trials; it is also used as a gundog, and may be trained for use as a guide
+                dog.
+
+                The breed was created by Sir Dudley Marjoribanks at his Scottish estate Guisachan in the late nineteenth
+                century. He cross-bred Flat-coated Retrievers with Tweed Water Spaniels, with some further infusions of
+                Red
+                Setter, Labrador Retriever and Bloodhound. The breed was recognised by the Kennel Club in 1913, and
+                during
+                the interwar period spread to many parts of the world.</p>
+        </div>
+        <div class="animalsTextPic">
+            <h2 class="breedNameOnPic">Labrador Retriever</h2>
+            <img class="dogs" src="Pictures/LabradorRetriever.jpg" alt="Labrador Retriever">
+            <p class="textUnderPic">The Labrador Retriever or Labrador is a British breed of retriever gun dog. It was
+                developed in the United Kingdom from fishing dogs imported from the colony of Newfoundland (now a
+                province
+                of Canada), and was named after the Labrador region of that colony. It is among the most commonly kept
+                dogs
+                in several countries, particularly in the Western world.
+
+                The Labrador is loyal, obedient and playful. It was bred as a sporting and hunting dog, but is widely
+                kept
+                as a companion dog. It may also be trained as a guide or assistance dog, or for rescue or therapy work.
+
+                In the 1830s, the 10th Earl of Home and his nephews the 5th Duke of Buccleuch and Lord John Scott,
+                imported progenitors of the breed from Newfoundland to Europe for use as gundogs. Another early advocate
+                of
+                these Newfoundland fishing dogs was the 2nd Earl of Malmesbury, who bred them for their expertise in
+                waterfowling.
+
+                During the 1880s, the 3rd Earl of Malmesbury, the 6th Duke of Buccleuch, and the 12th Earl of Home
+                collaborated to develop and establish the Labrador Retriever breed. The dogs Buccleuch Avon and
+                Buccleuch
+                Ned, given by Malmesbury to Buccleuch, were mated with bitches carrying blood from those originally
+                imported
+                by the 5th Duke and the 10th Earl of Home. The offspring are the ancestors of all modern Labradors.</p>
+        </div>
+        <div><button onclick="myFunction()" class="click btn delete" >Delete whole page :)</button></div>
     </div>
-    <div class="animalsTextPic">
-        <h2 class="breedNameOnPic">Shiba Inu</h2>
-        <img class="dogs" src="Pictures/ShibaInu.jpg" alt="Shiba Inu">
-        <p class="textUnderPic">The Shiba Inu (柴犬, Japanese: [ɕiba inɯ]) is a breed of hunting dog from Japan. A
-            small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to
-            Japan.
-
-            A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba Inu
-            was originally bred for hunting. It looks similar to and is often mistaken for other Japanese dog
-            breeds such as the Akita Inu or Hokkaido, but the Shiba Inu is a different breed with a distinct blood line,
-            temperament, and smaller size than other Japanese dog breeds.</p>
-    </div>
-    <div class="animalsTextPic">
-        <h2 class="breedNameOnPic">Golden Retriever</h2>
-        <img class="dogs" src="Pictures/GoldenRetriever2.jpg" alt="Golden Retriever">
-        <p class="textUnderPic">The Golden Retriever is a British breed of retriever dog of medium size. It is
-            characterised by a gentle and affectionate nature and a striking golden coat. It is commonly kept as a pet
-            and is among the most frequently registered breeds in several Western countries. It is a frequent competitor
-            in dog shows and obedience trials; it is also used as a gundog, and may be trained for use as a guide dog.
-
-            The breed was created by Sir Dudley Marjoribanks at his Scottish estate Guisachan in the late nineteenth
-            century. He cross-bred Flat-coated Retrievers with Tweed Water Spaniels, with some further infusions of Red
-            Setter, Labrador Retriever and Bloodhound. The breed was recognised by the Kennel Club in 1913, and during
-            the interwar period spread to many parts of the world.</p>
-    </div>
-    <div class="animalsTextPic">
-        <h2 class="breedNameOnPic">Labrador Retriever</h2>
-        <img class="dogs" src="Pictures/LabradorRetriever.jpg" alt="Labrador Retriever">
-        <p class="textUnderPic">The Labrador Retriever or Labrador is a British breed of retriever gun dog. It was
-            developed in the United Kingdom from fishing dogs imported from the colony of Newfoundland (now a province
-            of Canada), and was named after the Labrador region of that colony. It is among the most commonly kept dogs
-            in several countries, particularly in the Western world.
-
-            The Labrador is loyal, obedient and playful. It was bred as a sporting and hunting dog, but is widely kept
-            as a companion dog. It may also be trained as a guide or assistance dog, or for rescue or therapy work.
-
-            In the 1830s, the 10th Earl of Home and his nephews the 5th Duke of Buccleuch and Lord John Scott,
-            imported progenitors of the breed from Newfoundland to Europe for use as gundogs. Another early advocate of
-            these Newfoundland fishing dogs was the 2nd Earl of Malmesbury, who bred them for their expertise in
-            waterfowling.
-
-            During the 1880s, the 3rd Earl of Malmesbury, the 6th Duke of Buccleuch, and the 12th Earl of Home
-            collaborated to develop and establish the Labrador Retriever breed. The dogs Buccleuch Avon and Buccleuch
-            Ned, given by Malmesbury to Buccleuch, were mated with bitches carrying blood from those originally imported
-            by the 5th Duke and the 10th Earl of Home. The offspring are the ancestors of all modern Labradors.</p>
-    </div>
-    <div><button class="click" type="button">Click me!</button></div>
 
 </body>
 
