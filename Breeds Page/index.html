@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Nikolai Nachev">
 
     <title>First Site Ever</title>
@@ -94,8 +94,8 @@
             display: inline-block;
             border-radius: 50%;
             transition-duration: 0.2s;
-            margin-left: 0.8%;
-            margin-right: 0.8%;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
             margin-bottom: 2%;
             margin-top: 2%;
             text-align: center;
@@ -120,7 +120,10 @@
             color: white;
         }
         .delete{
-            width: 100%;
+            width:100%;
+            margin: auto;
+            margin-top: 1%;
+            margin-bottom: 2%;
         }
     </style>
 </head>
@@ -286,8 +289,10 @@
                 imported
                 by the 5th Duke and the 10th Earl of Home. The offspring are the ancestors of all modern Labradors.</p>
         </div>
-        <div><button onclick="myFunction()" class="click btn delete" >Delete whole page :)</button></div>
+        <button onclick="myFunction()" class="click btn delete" >Delete whole page :)</button>
     </div>
+
+    <button onclick="window.location.href='\indexWithBackground.html';" class="click btn delete">Without <strong>Buttons</strong> but with <strong>Background</strong></button>
 
 </body>
 
