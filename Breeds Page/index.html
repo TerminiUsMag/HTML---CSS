@@ -4,28 +4,35 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Nikolai Nachev">
-    
+
     <title>First Site Ever</title>
     <style>
         div.mainHeader {
             color: white;
-            background-color: rgb(48, 124, 231);
+            background-color: inherit;
+            align-content: center;
+            
+        }
+        
+        .header {
             margin-bottom: 50px;
             margin: auto;
             max-width: auto;
             align-items: center;
-            font-size: 30px;
-            font-style: italic;
-            font-weight: bold;
-            font-family: serif;
-            text-align: center;
+            
+            padding: 10px;
+            padding-left: 15px;
+            display: inline-block;
             border-style: dotted;
             border-width: 10px;
             border-radius: 500%;
-            padding: 10px;
-            padding-left: 15px;
-            align-content: center;
+            background-color: rgb(48, 124, 231);
             width: fit-content;
+            font-size: 100px;
+            text-align: center;
+            font-style: italic;
+            font-weight: bold;
+            font-family: serif;
         }
 
         body {
@@ -72,9 +79,9 @@
             width: 350px;
             font-size: large;
         }
-        .btn{
-            
-            border-style:initial;
+
+        .btn {
+            border: 3px solid rgb(232, 71, 71);
             background-color: rgb(232, 71, 71);
             color: white;
             padding: 28px 28px;
@@ -83,30 +90,43 @@
             display: inline-block;
             border-radius: 50%;
             transition-duration: 0.2s;
-            margin-right: 2%;
+            margin-left: 0.8%;
+            margin-right: 0.8%;
             margin-bottom: 2%;
+            margin-top: 2%;
+            text-align: center;
         }
-        .btn:hover{
-            background-color:#eee;
+
+        .btn:hover {
+            background-color: #eee;
             color: black;
             border: 3px solid rgb(232, 71, 71);
         }
-        .click{
-            cursor:pointer;
+
+        .click {
+            cursor: pointer;
             padding: 14px 28px;
             font-size: 16px;
             border-radius: 15px;
             border: none;
         }
-        .click:hover{background: #04AA6D;
-        color: white;}
-        
+
+        .click:hover {
+            background: #04AA6D;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
     <div class="mainHeader">
-        <h1>Favourite Cat Breeds !</h1>
+        <button class="btn success">Success</button>
+        <button class="btn info">Info</button>
+        <button class="btn breeds">Breeds</button>
+        <h1 class="header">Favourite Cat Breeds !</h1>
+        <button class="btn warning">Warning</button>
+        <button class="btn danger">Danger</button>
+        <button class="btn default">Default</button>
     </div>
     <div class="animalsTextPic
     ">
@@ -227,11 +247,6 @@
     </div>
     <div><button class="click" type="button">Click me!</button></div>
 
-    <button class="btn success">Success</button>
-    <button class="btn info">Info</button>
-    <button class="btn warning">Warning</button>
-    <button class="btn danger">Danger</button>
-    <button class="btn default">Default</button>
 </body>
 
 </html>
