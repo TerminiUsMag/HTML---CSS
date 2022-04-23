@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nikolai Nachev">
+    
     <title>First Site Ever</title>
     <style>
         div.mainHeader {
@@ -70,15 +73,24 @@
             font-size: large;
         }
         .btn{
-            border:none;
-            background-color: inherit;
-            padding: 14px 28px;
+            
+            border-style:initial;
+            background-color: rgb(232, 71, 71);
+            color: white;
+            padding: 28px 28px;
             font-size: 16px;
             cursor: pointer;
             display: inline-block;
-            border-radius: 100%;
+            border-radius: 50%;
+            transition-duration: 0.2s;
+            margin-right: 2%;
+            margin-bottom: 2%;
         }
-        .btn:hover{background:#eee;}
+        .btn:hover{
+            background-color:#eee;
+            color: black;
+            border: 3px solid rgb(232, 71, 71);
+        }
         .click{
             cursor:pointer;
             padding: 14px 28px;
@@ -86,7 +98,8 @@
             border-radius: 15px;
             border: none;
         }
-        .click:hover{background: white;}
+        .click:hover{background: #04AA6D;
+        color: white;}
         
     </style>
 </head>
