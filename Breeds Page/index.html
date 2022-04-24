@@ -19,14 +19,13 @@
             margin: auto;
             max-width: auto;
             align-items: center;
-            padding: 10px;
-            padding-left: 15px;
             display: inline-block;
             border-style: dotted;
             border-width: 10px;
             border-radius: 500%;
             background-color: rgb(48, 124, 231);
             width: fit-content;
+            padding: 20px;
             font-size: 100px;
             text-align: center;
             font-style: italic;
@@ -119,11 +118,30 @@
             background: #04AA6D;
             color: white;
         }
-        .delete{
-            width:100%;
+
+        .delete {
+            width: 100%;
             margin: auto;
             margin-top: 1%;
             margin-bottom: 2%;
+        }
+
+        .sideBar {
+            display: inline-block;
+
+        }
+
+        .sideParagraph {
+            background-color: rgb(48, 124, 231);
+            font-size:20px;
+
+        }
+
+        .listSideBar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
         }
     </style>
 </head>
@@ -236,7 +254,7 @@
             <p class="textUnderPic">The Shiba Inu (柴犬, Japanese: [ɕiba inɯ]) is a breed of hunting dog from Japan. A
                 small-to-medium breed, it is the smallest of the six original and distinct spitz breeds of dog native to
                 Japan.
-
+                
                 A small, alert, and agile dog that copes very well with mountainous terrain and hiking trails, the Shiba
                 Inu
                 was originally bred for hunting. It looks similar to and is often mistaken for other Japanese dog
@@ -289,10 +307,34 @@
                 imported
                 by the 5th Duke and the 10th Earl of Home. The offspring are the ancestors of all modern Labradors.</p>
         </div>
-        <button onclick="myFunction()" class="click btn delete" >Delete whole page :)</button>
+        <button onclick="myFunction()" class="click btn delete">Delete whole page :)</button>
     </div>
 
-    <button onclick="window.location.href='\indexWithBackground.html';" class="click btn delete">Without <strong>Buttons</strong> but with <strong>Background</strong></button>
+    <button onclick="window.location.href='\indexWithBackground.html';" class="click btn delete">Without
+        <strong>Buttons</strong> but with <strong>Background</strong></button>
+
+
+    <div class="mainHeader">
+        <h1 class="header center">Other domestic animals!</h1>
+    </div>
+    <div class="sideBar">
+        <h2 class="sideHeader">Interesting facts : </h2>
+        <ul class="listSideBar ">
+            <li>
+                <p class="sideParagraph center">Their sense of smell is at least <strong>40x</strong> better than ours.
+                </p>
+            </li>
+            <li>
+                <p class="sideParagraph center">Some have such good noses they can sniff out medical problems.</p>
+            </li>
+            <li>
+                <p class="sideParagraph center">Dogs can sniff at the same time as breathing</p>
+            </li>
+            <li>
+                <p class="sideParagraph center">Some dogs are incredible swimmers.</p>
+            </li>
+        </ul>
+    </div>
 
 </body>
 
